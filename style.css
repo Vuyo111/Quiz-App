@@ -18,9 +18,11 @@ body {
 .quiz-container {
   background: #fff;
   width: 90%;
-  max-width: 800px;
-  padding: 2rem;
+  max-width: 100%;
+  padding: 20px;
   border-radius: 12px;
+  word-wrap: break-word;
+  box-sizing: border-box;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
@@ -46,6 +48,8 @@ p {
   cursor: pointer;
   margin-top: 1rem;
   transition: background 0.3s ease;
+  max-width: 100%;
+    white-space: normal; 
 }
 
 .btn:hover {
@@ -63,6 +67,9 @@ p {
   background-color: #ecf0f1;
   color: #333;
   border: 1px solid #ccc;
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .btn.answer-btn.correct {
